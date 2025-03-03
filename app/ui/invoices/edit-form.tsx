@@ -113,6 +113,19 @@ export default function EditInvoiceForm({
             </div>
           </div>
         </fieldset>
+        {state.errors && (
+          <div className="mt-2 text-red-500 text-sm">
+            {Object.values(state.errors).map((error, idx) => (
+              <p key={idx}>{error}</p>
+            ))}
+          </div>
+        )}
+
+        {state.message && (
+          <div className="mt-2 text-green-500 text-sm">
+            {state.message}
+          </div>
+        )}
       </div>
       <div className="mt-6 flex justify-end gap-4">
         <Link

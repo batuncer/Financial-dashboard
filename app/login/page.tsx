@@ -16,8 +16,10 @@ export default function LoginPage() {
           <LoginForm />
         </Suspense>
         <div className="mt-4 text-center">
-          <span>Don't have an account? </span>
-          <Link href="/signup" className="text-blue-600 hover:underline">Sign up</Link>
+          <span>Don’t have an account? </span>
+          <Link href="/signup" className="text-blue-600 hover:underline">
+            Sign up
+          </Link>
         </div>
       </div>
     </main>
